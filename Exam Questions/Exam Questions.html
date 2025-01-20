@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Exam</title>
+    <link rel="stylesheet" href="Exam Questions.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Exam Questions</h1>
+        <div class="timer">
+            <span id="time">30:00</span>
+        </div>
+    </header>
+
+    <main class="exam-container">
+        <!-- Drag and Drop -->
+        <div class="question-card drag-and-drop">
+            <h2>Question 1</h2>
+            <h3>Choose the correct word:</h3>
+            <p>  The student ___ his homework</p>
+            <div class="drop-zone" id="dropZone">
+                <span id="dropText">Drag the answer here</span>
+            </div>
+            <div class="drag-container">
+                <div class="drag-item" id="drag1" draggable="true" data-answer="Berlin">Berlin</div>
+                <div class="drag-item" id="drag2" draggable="true" data-answer="Madrid">Madrid</div>
+                <div class="drag-item" id="drag3" draggable="true" data-answer="Paris">Paris</div>
+                <div class="drag-item" id="drag4" draggable="true" data-answer="Rome">Rome</div>
+            </div>
+        </div>
+
+        <!-- Short Answer -->
+        <div class="question-card short-answer">
+            <h2>Question 2</h2>
+            <p>What is the capital of France?</p>
+            <textarea type="text" name="question2" placeholder="Enter your answer"></textarea>
+        </div>
+
+        <!-- Regular Choice -->
+        <div class="question-card regular-choice">
+            <h2>Question 3</h2>
+            <p>What is the result of 7 x 5?</p>
+            <label><input type="radio" name="question3" value="30"> 30</label><br>
+            <label><input type="radio" name="question3" value="35"> 35</label><br>
+            <label><input type="radio" name="question3" value="40"> 40</label><br>
+            <label><input type="radio" name="question3" value="45"> 45</label>
+        </div>
+
+        <!-- Multiple Choice -->
+        <div class="question-card multiple-choice">
+            <h2>Question 4</h2>
+            <p>What is the capital of France?</p>
+            <label><input type="checkbox" name="question4" value="Berlin"> Berlin</label><br>
+            <label><input type="checkbox" name="question4" value="Madrid"> Madrid</label><br>
+            <label><input type="checkbox" name="question4" value="Paris"> Paris</label><br>
+            <label><input type="checkbox" name="question4" value="Rome"> Rome</label>
+        </div>
+
+        <!-- Drop List (True/False Replacement) -->
+        <div class="question-card drop-list">
+            <h2>Question 5</h2>
+            <p>The capital of France is Paris.</p>
+            <select name="question5" id="question5">
+                <option disabled selected>Select an option</option>
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </div>
+
+        <button class="submit-btn" onclick="submitExam()">Submit Exam</button>
+    </main>
+
+    <script src="Exam Questions.js"></script>
+</body>
+</html>
