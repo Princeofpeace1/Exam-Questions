@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rock</title>
+    <link rel="stylesheet" href="Active Exams.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#rock">Rock</a>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul id="menu">
+                    <li><a href="#active-exams">Active Exams</a></li>
+                    <li><a href="Results.html">Results</a></li>
+                    <li><a href="Profile.html">Profile</a></li>
+                </ul>
+            </div>
+
+            <div class="men">
+                <div class="nav_btns">
+                    <i id="btn" class="fa-solid fa-user"></i>
+                    <div class="card" id="card">
+                        <a href="../Sign up/Login.html" class="logout">Sign Out</a>
+                        <hr>
+                        <i class="fa-regular fa-user"></i>
+                        <p class="user-name">syed</p>
+                        <p class="user-email">syed@gmail.com</p>
+                    </div>
+                </div>
+                <div class="nav_menu_btn" id="menu-btn" >
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- صفحة Active Exams -->
+    <section class="active-exams">
+        <h1>Available Exams</h1>
+        <div class="cards-container">
+            <!-- بطاقة امتحان -->
+            <div class="exam-card">
+                <h3>Mathematics</h3>
+                <p><strong>Professor:</strong> Ahmed Mohamed</p>
+                <p><strong>Number of Questions:</strong> 10</p>
+                <button onclick="startExam('Mathematics')">Go to Exam</button>
+            </div>
+            <!-- بطاقة امتحان -->
+            <div class="exam-card">
+                <h3>Physics</h3>
+                <p><strong>Professor:</strong> Ali Mahmoud</p>
+                <p><strong>Number of Questions:</strong> 15</p>
+                <button onclick="startExam('Physics')">Go to Exam</button>
+            </div>
+            <!-- بطاقة امتحان -->
+            <div class="exam-card">
+                <h3>Arabic Language</h3>
+                <p><strong>Professor:</strong> Sara Khalid</p>
+                <p><strong>Number of Questions:</strong> 20</p>
+                <button onclick="startExam('Arabic Language')">Go to Exam</button>
+            </div>
+            <!-- بطاقة امتحان -->
+            <div class="exam-card">
+                <h3>Arabic Language</h3>
+                <p><strong>Professor:</strong> Sara Khalid</p>
+                <p><strong>Number of Questions:</strong> 20</p>
+                <button onclick="startExam('Arabic Language')">Go to Exam</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/Sign up/Register.js"></script>
+</body>
+</html>

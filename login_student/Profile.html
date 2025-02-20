@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="Profile.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#rock">Rock</a>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul id="menu">
+                    <li><a href="Active Exams.html">Active Exams</a></li>
+                    <li><a href="Results.html">Results</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+            </div>
+
+            <div class="men">
+                <div class="nav_btns">
+                    <i id="btn" class="fa-solid fa-user"></i>
+                    <div class="card" id="card">
+                        <a href="../Sign up/Login.html" class="logout">Sign Out</a>
+                        <hr>
+                        <i class="fa-regular fa-user"></i>
+                        <p class="user-name">Ahmed</p>
+                        <p class="user-email">ahmed@example.com</p>
+                    </div>
+                </div>
+                <div class="nav_menu_btn" id="menu-btn">
+                    <span>
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="profile">
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>Personal Profile</h1>
+        </div>
+        <div class="profile-details">
+            <div class="profile-item">
+                <i class="fas fa-user"></i>
+                <div class="info">
+                    <h4>Name</h4>
+                    <p class="editable" data-field="name">Mohammed Rahim</p>
+                    <input type="text" class="edit-input" data-field="name" style="display: none;" value="Mohammed Rahim">
+                </div>
+            </div>
+            <div class="profile-item">
+                <i class="fas fa-university"></i>
+                <div class="info">
+                    <h4>University</h4>
+                    <p class="editable" data-field="university">Rafidain University College</p>
+                    <input type="text" class="edit-input" data-field="university" style="display: none;" value="Rafidain University College">
+                </div>
+            </div>
+            <div class="profile-item">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                    <h4>Email</h4>
+                    <p class="editable" data-field="email">Mohammed@example.com</p>
+                    <input type="email" class="edit-input" data-field="email" style="display: none;" value="Mohammed@example.com">
+                </div>
+            </div>
+            <div class="profile-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="info">
+                    <h4>Department</h4>
+                    <p class="editable" data-field="department">Computer Science</p>
+                    <input type="text" class="edit-input" data-field="department" style="display: none;" value="Computer Science">
+                </div>
+            </div>
+            <div class="profile-item">
+                <i class="fas fa-phone"></i>
+                <div class="info">
+                    <h4>Phone</h4>
+                    <p class="editable" data-field="phone">0501234567</p>
+                    <input type="text" class="edit-input" data-field="phone" style="display: none;" value="0501234567">
+                </div>
+            </div>
+            <div class="profile-item">
+                <i class="fas fa-school"></i>
+                <div class="info">
+                    <h4>Level</h4>
+                    <p class="editable" data-field="level">The fourth stage</p>
+                    <input type="text" class="edit-input" data-field="level" style="display: none;" value="The fourth stage">
+                </div>
+            </div>
+        </div>
+        <button class="edit-button" onclick="toggleEdit()">Edit</button>
+        <button class="save-button" onclick="saveChanges()" style="display: none;">Save</button>
+        <button class="cancel-button" onclick="cancelEdit()" style="display: none;">Cancel</button>
+    </div>
+</section>
+
+    <script src="/Sign up/Register.js"></script>
+</body>
+</html>
